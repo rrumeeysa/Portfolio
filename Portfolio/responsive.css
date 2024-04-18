@@ -1,0 +1,241 @@
+@media (max-width: 1227px){
+
+    header {
+        left: 0;
+    }
+
+    .avatar {
+        margin-left: 16%;
+    }
+
+    .avatar-me {
+        margin-left: -40%;
+    }
+
+    .avatar-me img {
+        width: 40%;
+    }
+
+    .avatar img {
+        width: 64%;
+    }
+
+    .home-media a {
+        width: 37px;
+        margin: 17px 12px 10px 0;
+    }
+
+    .experience-box {
+        display: flex;
+        justify-content: space-between; /* İçerikleri arasında boşluk bırakır */
+    }
+    
+    .experience,
+    .skill {
+        width: 40%; 
+    }
+
+    .list div span {
+        margin-left: auto;
+    }
+
+    .list {
+        font-size: 11px;
+    }
+
+    .skill hr,
+    .experience hr {
+        width: 264px;
+    }
+
+    .skill {
+        margin-left: 0vh;
+        margin-top: 1vh;
+        width: 40%;
+    }
+
+    .skill-list {
+        margin-left: 11px 
+    }
+
+    .skill-list i {
+        margin-right: 66px;
+    }
+
+    .skill-list, .list {
+        font-size: 10px;
+    }
+
+    .cantact {
+        margin-bottom: 20px;
+        background: no-repeat;
+    }
+
+    .contact-map iframe {
+        width: 100%;
+        height: auto; 
+    }
+
+    .row {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .exxen img {
+        width: 100%;
+    }
+
+    .layer-two {
+        width: 101%;
+    } 
+
+    .box-container {
+        display: none;
+    }
+
+    .contact-text h2 {
+        font-size: 47px;
+        margin-left: 4vh;
+    }
+
+    .content-list {
+        margin-left: 4vh;
+    }
+
+    .contact-media i {
+        width: 26px;
+        height: 32px;
+    }
+
+    .portfolio-content {
+        width: 50%;
+        gap: 20px;
+        margin-top: 23vh;
+        margin-left: 10vh;
+    }
+
+    .main-text h2{
+        width: 27%;
+        margin-left: 30%;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        margin-left: 35px;
+    }
+
+}
+
+@media (max-width: 1661px) {
+    .exxen img {
+        width: 92%;
+        height: 45vh;
+    }
+
+    .layer-two {
+        width: 97%;
+    }
+}
+
+@media (max-width: 700px){
+    .avatar img{
+       display: none;
+    }
+    .home {
+        padding: 17%;
+    }
+    .navbar a{
+        display: none;
+    }
+    
+
+    .avatar-me img{
+        display: none;
+    }
+    .about {
+        margin-left: -33%;
+        margin-top: -8vh;
+    }
+    .about-text {
+        margin-top: 0vh;
+        margin-left: -13vh;
+    }
+    
+    .about-text h1{
+        font-size: 37px;
+        margin: 60px;
+    }
+
+    .about-text h4 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: larger;
+    }
+
+    .skill hr, 
+    .experience hr {
+        width: 136px;
+    }
+
+    .experience-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10vh;
+    }
+    
+    .experience, .skill {
+        width: 95%;
+        height: 35vh;
+    }
+
+    .main-text h2 {
+        width: 45%;
+        margin-left: 20%;
+    }
+
+    .main-text {
+        padding-top: 25vh;
+    }
+
+    
+
+    .portfolio-content {
+        width: 50%;
+        gap: 20px;
+        margin-top: 23vh;
+    }
+
+    .row {
+        margin-left: 0vh;
+    }
+
+    .exxen img {
+        width: 101%;
+        height: auto;
+    }
+
+    .layer-two {
+        width: 101%;
+    }
+
+    .box-container {
+        display: none;
+    }
+
+    .contact-text h2 {
+        font-size: 47px;
+        margin-left: 4vh;
+    }
+
+    .content-list {
+        margin-left: 4vh;
+    }
+
+    .contact-media i {
+        width: 26px;
+        height: 32px;
+    }
+}

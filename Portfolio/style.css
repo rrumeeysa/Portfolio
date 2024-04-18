@@ -1,0 +1,504 @@
+body {
+    background: black;
+    background-color: #323232;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    
+    font-family: system-ui;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: gray;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: wheat;
+}
+.home {
+    color: wheat;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.avatar {
+    margin-left: 35%;
+}
+.avatar img {
+    width: 58%;
+    border-radius: 70px;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    transition: .3s;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    transition: .3s;
+}
+.home-content p {
+    font-size: 20px;
+    transition: .3s;
+}
+.home-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(158, 155, 155);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(218, 213, 213);
+    margin: 30px 15px 30px 0;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: -3%;
+}
+.avatar-me img {
+    width: 35%;
+    border-radius: 70px;
+    margin-left: 28vh;
+    margin-top: 177px;
+}
+.about-text{
+    width: 80%;
+    margin-top: 10vh;
+}
+
+.about-text h1 {
+    text-align: center;
+    color: wheat;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 70px 0;
+}
+
+.about-text h4 {
+    color: #cdcdcd;
+    margin: 15px 0 30px;
+    font-size: 32px;
+    font-weight: 700;
+    transition: .3s;
+}
+.about-text p {
+    color: #cdcdcd;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: left;
+    transition: .3s;
+}
+
+.list {
+    display: flex;
+    flex-direction: column; /* İçeriği dikey olarak düzenler */
+    align-items: flex-start; /* İçeriği sol üst köşede hizalar */
+    gap: 30px;
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.list div {
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.list i {
+    margin-right: 10px;
+    color: #ffff;
+}
+
+.list span {
+    font-style: italic;
+    color: #817474;
+}
+
+.experience-box {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0px 10% 0;
+    justify-content: flex-end;
+}
+
+.experience {
+    text-align: center;
+    background-color: #80808040;
+    border-radius: 29px;
+    height: 36vh;
+    width: 35%;
+}
+
+.experience h1{
+    color: wheat;
+    text-align: center;
+}
+
+.experience hr {
+    margin-top: 25px;
+    /* max-width: 40vh;
+    margin-left: 6vh; */
+}
+
+.experience h2{
+    color: #ffff;
+}
+
+/*! ------------------------------- */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.skill-list div {
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.skill-list i {
+    margin-right: 10px;
+    color: #ffff;
+}
+
+.skill {
+    text-align: center;
+    background-color: #80808040;
+    border-radius: 29px;
+    height: 36vh;
+    width: 35%;
+    margin-left: 50vh;
+}
+
+.skill h1{
+    color: wheat;
+    text-align: center;
+}
+
+.skill hr {
+    margin-top: 25px;
+    /* max-width: 40vh;
+    margin-left: 6vh; */
+}
+
+.skill h2{
+    color: #ffff;
+}
+
+.main-text {
+    padding-top: 170px;
+}
+
+.main-text h2 {
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    color: wheat;
+    background: #80808040;
+    width: 20%;
+    position: absolute;
+    margin-left: 40%;
+    border-radius: 8px;
+    height: 75px;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    margin-top: 12vh;
+    margin-left: 17vh;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 19px;
+}
+
+.row img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.exxen img {
+    width: 85%;
+}
+
+.layer {
+    width: 101%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.layer-two {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: -1px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layer h5,
+.layer-two h5{
+    color: bisque;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer i ,
+.layer-two i{
+    color: wheat;
+    font-size: 20px;
+    background: rgb(108, 107, 107);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.layer a,
+.layer-two a {
+    text-decoration: none;
+}
+
+
+.row:hover img {
+    transform: scale(1.1);
+}
+
+.row:hover .layer,
+.row:hover .layer-two {
+    height: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-left: 30px;
+    margin-top: 49vh;
+}
+
+.contact-text h2 {
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    color: wheat;
+    margin-left: -23vh;
+}
+
+.contact-text h4 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+.contact-text p {
+    color: gray;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    color: wheat;
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i {
+    display: inline-block;
+    color: gray;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.contact-list li a:hover {
+    transform: scale(1.01) translateY(-5px);
+    color: pink;
+}
+
+.content-list {
+    margin-left: 10vh;
+    margin-top: 7vh;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-media i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 20px;
+    color: wheat;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.contact-form form input, form textarea, form button{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #ffffff;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="Surname"],
+.contact-form form textarea {
+    text-transform: capitalize;
+}
+
+
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: wheat;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.last-text {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 70px;
+    color: wheat;
+}
+
+.box-container {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -45vh;
+    background: #80808042;
+    width: 16%;
+    height: 27px;
+    border-radius: 6px;
+    margin-left: 35vh;
+}
+
+.box-container i {
+    display: inline-flex;
+    margin-left: -2px;
+    gap: 8px;
+    color: white;
+}
+
+.box-container p {
+    margin-left: 9px;
+    font-size: 17px;
+    color: white;
+}
+
+.start {
+    position: fixed;
+    bottom: 1.1rem;
+}
+
+.start i {
+    color: gray;
+    background: wheat;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 9px;
+}
